@@ -1,0 +1,35 @@
+my_str = input('Enter an integer >')
+
+my_dig = my_str.isdigit()
+
+my_lens = len(my_str)
+
+str_1 = my_str.strip('-')
+
+my_dig = str_1.isdigit()
+
+my_lens2 = len(str_1)
+
+if my_dig == True:
+
+    new_digit = int(my_str)
+
+    digit_sign = -new_digit
+
+    print('The negative of',new_digit,'is',digit_sign)
+
+elif my_lens == my_lens2 + 1:
+
+    if my_dig == True:
+
+        digit_sign = int(str_1)
+
+        my_lens = -digit_sign
+
+        print('The negative of',my_lens,'is',digit_sign)
+    else:
+        print(my_str,'is not an integer')  
+
+else:
+
+    print(my_str,'is not an integer')  
